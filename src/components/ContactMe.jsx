@@ -12,19 +12,19 @@ function ContactMe() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_pe2t93f', 'template_hvay6uz', form.current, 'uI3REVQN0Ajfu_ED6')
+    emailjs.sendForm(import.meta.env.VITE_APP_EMAILJS_SERVICE_ID, import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID, form.current, import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY)
       .then((result) => {
         setSuccessMessage('Message sent successfully!!');
         alert("Thank you. I will get back to you as soon as possible.");
         setTimeout(() => {
           setSuccessMessage(null);
-        }, 800);
+        }, 1000);
       })
       .catch((error) => {
         setErrorMessage('Ahh, something went wrong. Please try again.');
         setTimeout(() => {
           setErrorMessage(null);
-        }, 800);
+        }, 1000);
       });
 
     e.target.reset();
