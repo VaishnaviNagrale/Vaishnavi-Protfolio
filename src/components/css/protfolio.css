@@ -1,0 +1,24 @@
+.protfolio-card{
+    padding: 20px 10px;
+    margin: 0 20px;
+    border-radius: 10px;
+    border: 1px solid orange;
+    color: #a9fcfe;
+    box-shadow: 10px 10px 10px #713920;
+    transition: all 0.5s;
+}
+.protfolio-card:hover{
+    box-shadow: 10px 10px 10px orange;
+    color: #fff;
+    border: none;
+}
+.protfolio-button-github,.protfolio-button-site{
+    padding: 10px 20px;
+    border: 1px solid #a9fcfe;
+    color: #a9fcfe;
+}
+.protfolio-button-github:hover,.protfolio-button-site:hover{
+    background-image: linear-gradient(to top right,#e339ff,#6093c2);
+    color: #fff;
+    border: none;
+}
