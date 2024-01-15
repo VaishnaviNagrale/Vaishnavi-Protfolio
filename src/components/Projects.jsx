@@ -74,8 +74,8 @@ function Projects() {
       stack2: "Tailwind",
       stack3: "Email.js",
 
-      githubLink: "/",
-      liveLink: "/",
+      githubLink: "https://github.com/VaishnaviNagrale/Vaishnavi-Protfolio.git",
+      liveLink: "https://vaishnavi-nagrale.vercel.app/",
     },
   ]
   return (
