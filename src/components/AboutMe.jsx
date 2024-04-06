@@ -16,7 +16,7 @@ function AboutMe() {
               <span className='md:text-3xl lg:text-3xl text-2xl text-orange-500'>
                 Overview
               </span>
-            </h1>
+            </h1> 
             <p className='py-6 text-sm lg:text-lg md:text-lg'>
               I'm an accomplished App Developer specializing in the Flutter framework. With a strong foundation in Web Development(MERN Stack), I possess expertise in React, Node, and Express. My database skills extend across MySQL, MongoDB, and Firebase.
 
