@@ -18,11 +18,11 @@ function Education() {
     },
   ]
   return (
-    <div id='education' className='mb-20'>
-      <h1 className='text-2xl text-orange-500 font-sans font-bold text-center'>Education</h1>
+    <div id='education' className='mb-20 py-10'>
+      <h1 className='text-2xl text-orange-500 font-sans font-bold text-center mb-6'>Education</h1>
       <div className='grid grid-cols-1 gap-5 py-3'>
       {
-          educats.map((educt,i)=>(<EduCard key={i} educt={educt}></EduCard>))
+          educats.map((educt,i)=>(<EduCard key={i} educt={educt} isFirstCard={i==0}></EduCard>))
         }
       </div>
     </div>

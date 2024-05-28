@@ -6,7 +6,11 @@ import chatgptLogo from '../assets/images/chatgpt-logo.png'
 import blogLogo from '../assets/images/blog-website-logo.png'
 import webnotesLogo from '../assets/images/webnotes-logo2.jpg'
 import portfolioLogo from '../assets/images/portfolio2.jpg'
+import smartkidslearningLogo from '../assets/images/SmartLearnerKids.jpg'
+import weconnectLogo from '../assets/images/we-connect-logo.png'
+import taskifyLogo from '../assets/images/taskifyLogo.png'
 import ProjectCard from './cards/ProjectCard'
+import { FaEthereum } from 'react-icons/fa'
 
 function Projects() {
 
@@ -14,13 +18,35 @@ function Projects() {
     {
       image: swastyasevaLogo,
       title: "स्वास्थ्यसेवा(Swastyaseva)",
-      description: "Created an Android hospital management app, utilizing Flutter, Firebase, and MongoDB. Integrated Tesseract OCR for handwritten prescription conversion, achieving 60-70% accuracy for handwritten and 90% for printed text. Streamlined processes and reduced paperwork",
+      description: "Swastyaseva is an Android app, developed for hospital management. The app significantly reduces paperwork by digitizing hospital operations. By implementing Tesseract OCR, it converts handwritten prescriptions with 60-70% accuracy and printed text with 90% accuracy. MongoDB is used for secure data storage, while Ethereum Blockchain enhances patient data security.",
       stack1: "Flutter",
       stack2: "Tesseract OCR",
-      stack3: "MongoDB",
+      stack3: "Ethereum Blockchain",
 
       githubLink: "https://github.com/VaishnaviNagrale/HappyCare.git",
       liveLink: "/",
+    },
+    {
+      image: smartkidslearningLogo,
+      title: "SmartLearnerKids",
+      description: "This project aids specially-abled children in learning alphabets and digits through a user-friendly website. Built with the MERN Stack, it uses Node.js and MongoDB for authentication, Assembly AI for voice transcription, and PyAudio for recording. Key features include image-based learning, audio guides, and real-time pronunciation feedback. The UI, enhanced with Tailwind CSS and animations, makes learning fun and accessible.",
+      stack1: "MERN Stack",
+      stack2: "Assembly AI API",
+      stack3: "Python",
+
+      githubLink: "https://github.com/VaishnaviNagrale/SmartLearnerKids.git",
+      liveLink: "/",
+    },
+    {
+      image: weconnectLogo,
+      title: "WE-Connect",
+      description: "WEConnect is an innovative online platform developed with the MERN Stack to empower rural housewives to become entrepreneurs from their homes. Unlike traditional e-commerce sites, WEConnect caters specifically to women from backward communities, enabling them to showcase and sell handmade products and offer services.By bridging rural and urban communities, WEConnect not only fosters economic independence but also preserves India's artisanal heritage.",
+      stack1: "React.js",
+      stack2: "JWT Token",
+      stack3: "Firebase",
+
+      githubLink: "https://github.com/VaishnaviNagrale/WE-Connect.git",
+      liveLink: "https://we-connect-seven.vercel.app/",
     },
     {
       image: chitchatLogo,
@@ -67,22 +93,33 @@ function Projects() {
       liveLink: "/",
     },
     {
-      image: portfolioLogo,
-      title: "Protfolio",
-      description: "Designed and developed a sleek portfolio website using React, Email.js, and Tailwind CSS. Boasting a beautiful UI, the website offers both visual appeal and practicality. Visitors can seamlessly interact and inquire, enhancing user engagement.",
-      stack1: "React",
-      stack2: "Tailwind",
-      stack3: "Email.js",
+      image: taskifyLogo,
+      title: "Taskify",
+      description: "Developed an Android app using Flutter that focuses on task management. The app allows users to add, delete, and edit tasks efficiently while providing a visually appealing user interface. I incorporated both dark and light themes to offer users a choice based on their preferences. For data storage, I integrated Firebase, enabling seamless and secure task management across devices. This comprehensive solution ensures users can organize their tasks effectively while enjoying a smooth and intuitive experience.",
+      stack1: "Flutter",
+      stack2: "Bloc State Managment",
+      stack3: "Firebase",
 
-      githubLink: "https://github.com/VaishnaviNagrale/Vaishnavi-Protfolio.git",
-      liveLink: "https://vaishnavi-nagrale.vercel.app/",
+      githubLink: "https://github.com/VaishnaviNagrale/Tasks-App.git",
+      liveLink: "/",
     },
+    // {
+    //   image: portfolioLogo,
+    //   title: "Protfolio",
+    //   description: "Designed and developed a sleek portfolio website using React, Email.js, and Tailwind CSS. Boasting a beautiful UI, the website offers both visual appeal and practicality. Visitors can seamlessly interact and inquire, enhancing user engagement.",
+    //   stack1: "React",
+    //   stack2: "Tailwind",
+    //   stack3: "Email.js",
+
+    //   githubLink: "https://github.com/VaishnaviNagrale/Vaishnavi-Protfolio.git",
+    //   liveLink: "https://vaishnavi-nagrale.vercel.app/",
+    // },
   ]
   return (
     <div id='projects' className='mb-20 items-center'>
       <h1 className='text-2xl text-orange-500 font-sans font-bold text-center'>Projects</h1>
       <div className='lg:flex lg:items-center lg:justify-center lg:py-10'>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 py-3'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 py-5'>
           {
             projects.map((project,i)=> <ProjectCard key={i} project={project}></ProjectCard>)
           }

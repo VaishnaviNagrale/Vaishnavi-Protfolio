@@ -1,25 +1,36 @@
-import React from 'react'
-import { IconContext } from 'react-icons';
+import React from "react";
+import { IconContext } from "react-icons";
 
-function EduCard({educt}) {
-    const {icon,name,duration,course} = educt;
+function EduCard({ educt, isFirstCard }) {
+  const { icon, name, duration, course } = educt;
+
+  const cardStyle = isFirstCard
+    ? "timeline-start md:text-end mb-10"
+    : "timeline-end md:text-start mb-10";
 
   return (
     <div>
-        <IconContext.Provider value={{size: '3rem'}}>
-            <div className='flex items-center justify-center'>
-                <figure>
-                    <i>{icon}</i>
-                </figure>
-                <div className='card-body'>
-                    <h2 className='card-title text-orange-400'>{course}</h2>
-                    <h3>{name}</h3>
-                    <h3>{duration}</h3>
-                </div>
+      <IconContext.Provider value={{ size: "2rem" }}>
+        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+          <li>
+            <div className={`timeline-middle ${isFirstCard ? "text-right" : "text-left"} m-2`}>
+              <div
+                className="rounded-full bg-gray-300 text-black flex items-center justify-center w-12 h-12"
+              >
+                {icon}
+              </div>
             </div>
-        </IconContext.Provider>
+            <div className={cardStyle}>
+              <time className="font-mono italic">{duration}</time>
+              <div className="text-lg font-black">{course}</div>
+              <div>{name}</div>
+            </div>
+            <hr />
+          </li>
+        </ul>
+      </IconContext.Provider>
     </div>
-  )
+  );
 }
 
-export default EduCard
+export default EduCard;
