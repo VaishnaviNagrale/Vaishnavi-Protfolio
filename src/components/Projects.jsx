@@ -31,7 +31,7 @@ function Projects() {
       title: "SmartLearnerKids",
       description: "This project aids specially-abled children in learning alphabets and digits through a user-friendly website. Built with the MERN Stack, it uses Node.js and MongoDB for authentication, Assembly AI for voice transcription, and PyAudio for recording. Key features include image-based learning, audio guides, and real-time pronunciation feedback. The UI, enhanced with Tailwind CSS and animations, makes learning fun and accessible.",
       stack1: "MERN Stack",
-      stack2: "Assembly AI API",
+      stack2: "Speech-To-Text",
       stack3: "Python",
 
       githubLink: "https://github.com/VaishnaviNagrale/SmartLearnerKids.git",
