@@ -14,6 +14,8 @@ import { FaEthereum } from 'react-icons/fa'
 
 function Projects() {
 
+  const novaLogo = "https://cdn.builder.io/api/v1/image/assets/TEMP/f8e9f7ed166074f1b63f89c6d1a258945ffa6a02a0a5635fe2466e73d82e2a5f?apiKey=2a71bb6c876b4ac2af76de651fbd6a28&";
+
   const projects = [
     {
       image: swastyasevaLogo,
@@ -25,6 +27,17 @@ function Projects() {
 
       githubLink: "https://github.com/VaishnaviNagrale/HappyCare.git",
       liveLink: "/",
+    },
+    {
+      image: novaLogo,
+      title: "Nova",
+      description: "This is an innovative full-stack video platform. The platform features comprehensive video management, personalized playlists, and robust user interaction capabilities. Security is ensured through the implementation of JWT authentication and bcrypt for password protection. The backend follows REST API and MVC architecture, utilizing MongoDB aggregation pipelines to enhance performance. The user interface is crafted to be user-friendly, responsive, and visually appealing, providing an engaging and seamless experience for users.",
+      stack1: "MERN Stack",
+      stack2: "JWT Auth and Bcrypt",
+      stack3: "REST API and MVC Architecture",
+
+      githubLink: "https://github.com/VaishnaviNagrale/Nova.git",
+      liveLink: "https://nova-xi-seven.vercel.app/",
     },
     {
       image: smartkidslearningLogo,

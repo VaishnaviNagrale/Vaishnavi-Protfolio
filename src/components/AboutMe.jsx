@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import image from "../assets/logo.jpg";
-import resume from "../assets/Vaishnavi_Nagrale_CV_534.pdf";
 
 function AboutMe() {
   return (
@@ -51,13 +50,6 @@ function AboutMe() {
               <strong>creating innovative solutions</strong> and pushing the
               boundaries of what's possible.
             </motion.p>
-            <motion.a
-              href={resume}
-              download="Vaishnavi_Nagrale_CV"
-              className="btn btn-accent"
-            >
-              Download CV
-            </motion.a>
           </div>
           {/* <img src={image} alt="" className='w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 rounded-lg shadow-2xl' /> */}
         </div>
